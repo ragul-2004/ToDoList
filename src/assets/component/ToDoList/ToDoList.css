@@ -1,0 +1,110 @@
+/* src/TodoList.css */
+.todo-list {/* Add this to the bottom of your existing TodoList.css */
+    body {
+      margin: 10;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(270deg, #ff6b6b, #f7d794, #ff6b6b);
+      background-size: 600% 600%;
+      animation: GradientAnimation 16s ease infinite;
+      
+    }
+    
+    @keyframes GradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #0e0000;
+    text-align: center;
+    border-width: 5px;
+    border-style:groove;
+    border-color: rgb(139, 46, 72);
+  
+  }
+  
+  .todo-list h1 {
+    margin-bottom: 10px;
+  }
+  
+  .input-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .input-container input {
+    padding: 6px;
+    width: 70%;
+    border: 1px solid #ff0303;
+    border-radius: 5px 0 0 5px;
+    border-width: 2px;
+  }
+  
+  .input-container button {
+    padding: 1px 0.5px;
+    font-size: small;
+    border: none;
+    background: rgba(248, 248, 126, 0.599);
+    color: black;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    border-radius: 0 2px 2px 0;
+  }
+  
+  .input-container button:hover {
+    background: #eeeeef;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  li.completed span {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  li button {
+    margin-left: 10px;
+    padding: 4px 5px;
+    border: none;
+    background: #86f5c583;
+    color: rgb(24, 21, 21);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  li button:hover {
+    background: #c82333;
+  }
+  
+  li button:nth-child(2) {
+    background: #f18cdb68;
+  }
+  
+  li button:nth-child(2):hover {
+    background: #f7e09a;
+  }
+
+  *{
+
+    justify-content: center;
+    align-items: center;
+
+  }
